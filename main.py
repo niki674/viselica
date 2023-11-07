@@ -1,6 +1,6 @@
 import os
 
-# clear = lambda: os.system('cls')
+clear = lambda: os.system('cls')
 
 print('Привет! Я загадал случайное слово, твоя задача - угадать его!')
 print('Поехали!')
@@ -15,7 +15,7 @@ attempts = 6
 while attempts > 0:
     isWin = True
     letter = input('Введите букву: ')
-    # clear()
+    clear()
     letters.append(letter)
     for simb in word:
         if simb in letters:
